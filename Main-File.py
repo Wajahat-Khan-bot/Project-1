@@ -18,49 +18,35 @@ while True:
 
     rand_num = random.randint(0, 2)
 
+#  (Rock = 0, paper = 1, scissor = 2)
     computer_input = options[rand_num]
+    print("Commputer choose: ", computer_input)
 
-    if (user_input == "rock" and computer_input == "rock"):
-        print("computer choose", computer_input)
-        print("Tie")
-
-    elif (user_input == "rock" and computer_input == "paper"):
-        print("computer choose", computer_input)
-        print("You Loos!")
-        computer_score += 1
-
-    elif (user_input == "rock" and computer_input == "scissor"):
-        print("computer choose", computer_input)
-        print("You Win!")
+    if (user_input == "rock" and computer_input == "scissor"):
+        print("YOU WON!")
         user_score += 1
 
-    elif (user_input == "paper" and computer_input == "paper"):
-        print("computer choose", computer_input)
-        print("Tie")
-
     elif (user_input == "paper" and computer_input == "rock"):
-        print("computer choose", computer_input)
-        print("You Loos!")
-        computer_score += 1
+        print("YOU WON!")
+        user_score += 1
 
-    elif (user_input == "paper" and computer_input == "scissor"):
-        print("computer choose", computer_input)
-        print("You Win!")
+    elif (user_input == "scissor" and computer_input == "paper"):
+        print("YOU WON!")
         user_score += 1
 
     elif (user_input == "scissor" and computer_input == "scissor"):
-        print("computer choose", computer_input)
+        print("Tie!")
+
+    elif (user_input == "paper" and computer_input == "paper"):
         print("Tie")
 
-    elif (user_input == "scissor" and computer_input == "paper"):
-        print("computer choose", computer_input)
-        print("You Win!")
-        user_score += 1
+    elif (user_input == "rock" and computer_input == "rock"):
+        print("Tie")
 
-    elif (user_input == "scissor" and computer_input == "rock"):
-        print("computer choose", computer_input)
-        print("You Loos!")
+    else:
+        print("YOU LOOS!")
         computer_score += 1
+
 
 print("--------------------------------")
 print("Your total score is ", user_score)
