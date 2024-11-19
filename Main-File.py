@@ -43,6 +43,7 @@ while True:
     elif (user_input == "rock" and computer_input == "rock"):
         print("Tie")
 
+    # All the loosing snerios are in eles statement
     else:
         print("YOU LOOS!")
         computer_score += 1
