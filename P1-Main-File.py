@@ -16,10 +16,10 @@ while True:
         print("Please choose a valid option")
         continue
 
-    rand_num = random.randint(0, 2)
+    random_num = random.randint(0, 2)
 
 #  (Rock = 0, paper = 1, scissor = 2)
-    computer_input = options[rand_num]
+    computer_input = options[random_num]
     print("Commputer choose: ", computer_input)
 
     if (user_input == "rock" and computer_input == "scissor"):
