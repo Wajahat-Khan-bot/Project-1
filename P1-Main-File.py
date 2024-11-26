@@ -49,6 +49,7 @@ while True:
         computer_score += 1
 
 
+# Print both score and tell who win the league
 print("--------------------------------")
 print("Your total score is ", user_score)
 print("Computer total score is", computer_score)
